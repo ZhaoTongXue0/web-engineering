@@ -4,7 +4,9 @@
   "description": "git提交规范",
   "keywords": [
     "git",
-    "commitLint"
+    "commitLint",
+    "lint",
+    "commit"
   ],
   "author": {
     "name": "qianyu@macbook",
@@ -14,8 +16,7 @@
   "license": "ISC",
   "main": "lib/commitLint-config.js",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
     "lib"
@@ -24,10 +25,10 @@
     "type": "git",
     "url": "git+https://github.com/ZhaoTongXue0/web-engineering.git"
   },
-  "scripts": {
-    "test": "node ./__tests__/commitLint-config.test.js"
-  },
   "bugs": {
     "url": "https://github.com/ZhaoTongXue0/web-engineering/issues"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.5.0"
   }
 }

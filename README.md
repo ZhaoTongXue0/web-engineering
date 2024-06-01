@@ -17,3 +17,16 @@ lerna create xxx
 ```
 
 ## markdownLint
+
+参考资料：
+
+[markdownlint](https://www.npmjs.com/package/markdownlint)
+
+## commitLint
+
+参考资料：
+
+[husky](https://typicode.github.io/husky/)
+
+[commitlint](https://commitlint.js.org/guides/getting-started.html)
+
