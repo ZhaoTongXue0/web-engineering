@@ -30,3 +30,7 @@ lerna create xxx
 
 [commitlint](https://commitlint.js.org/guides/getting-started.html)
 
+## stylelint
+
+## eslint
+
