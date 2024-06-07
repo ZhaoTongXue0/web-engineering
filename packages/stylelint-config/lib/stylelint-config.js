@@ -1,4 +1,5 @@
 module.exports = {
+  // 默认的警告级别 warning,不要用error。以免影响开发
   defaultSeverity: 'warning',
   plugins: ['stylelint-scss'],
   rules: {

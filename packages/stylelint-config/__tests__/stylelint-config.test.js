@@ -3,7 +3,7 @@ const stylelint = require('stylelint');
 const path = require('path');
 
 describe('__tests__/stylelint-config.test.js', () => {
-  it('Validate default', async () => {
+  it('Validate index', async () => {
     const filePaths = [path.join(__dirname, './fixtures/index.css')];
     
     const result = await stylelint.lint({
@@ -15,7 +15,27 @@ describe('__tests__/stylelint-config.test.js', () => {
     if (result && result.errored) {
       const filesResult = JSON.parse(result.output || '[]') || [];
       filesResult.forEach((fileResult) => {
-        console.log(`========= ${filePaths} ==========`);
+        console.log(`----------------------- ${filePaths} -----------------------`);
+        console.log(fileResult.warnings);
+      });
+      
+      assert.ok(filesResult.length !== 0);
+    }
+  });
+  
+  it('Validate essential', async () => {
+    const filePaths = [path.join(__dirname, './fixtures/essential.css')];
+    
+    const result = await stylelint.lint({
+      configFile: path.join(__dirname, '../lib/stylelint-config.js'),
+      files: filePaths,
+      fix: false,
+    });
+    
+    if (result && result.errored) {
+      const filesResult = JSON.parse(result.output || '[]') || [];
+      filesResult.forEach((fileResult) => {
+        console.log(`----------------------- ${filePaths} -----------------------`);
         console.log(fileResult.warnings);
       });
       
@@ -35,7 +55,7 @@ describe('__tests__/stylelint-config.test.js', () => {
     if (result && result.errored) {
       const filesResult = JSON.parse(result.output || '[]') || [];
       filesResult.forEach((fileResult) => {
-        console.log(`========= ${filePaths} ==========`);
+        console.log(`----------------------- ${filePaths} -----------------------`);
         console.log(fileResult.warnings);
       });
       
@@ -55,7 +75,7 @@ describe('__tests__/stylelint-config.test.js', () => {
     if (result && result.errored) {
       const filesResult = JSON.parse(result.output || '[]') || [];
       filesResult.forEach((fileResult) => {
-        console.log(`========= ${filePaths} ==========`);
+        console.log(`----------------------- ${filePaths} -----------------------`);
         console.log(fileResult.warnings);
       });
       
@@ -75,7 +95,7 @@ describe('__tests__/stylelint-config.test.js', () => {
     if (result && result.errored) {
       const filesResult = JSON.parse(result.output || '[]') || [];
       filesResult.forEach((fileResult) => {
-        console.log(`========= ${filePaths} ==========`);
+        console.log(`----------------------- ${filePaths} -----------------------`);
         console.log(fileResult.warnings);
       });
       
