@@ -3,9 +3,22 @@
 * @link https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules
 * @link https://www.npmjs.com/package/eslint-plugin-react-hooks
 * */
+import reactConfig from "eslint-plugin-react";
+import reactHooksConfig from "eslint-plugin-react-hooks";
 
-module.exports = {
-  plugins: ['react','react-hooks'],
+export default {
+  plugins: {
+    react: reactConfig,
+    react_hooks: reactHooksConfig,
+  },
+  files: ["**/*.js", "**/*.jsx"],
+  settings: {
+    react: {
+      pragma: 'React',
+      // 自动检测React版本
+      version: 'detect',
+    }
+  },
   rules: {
     // 防止 React 组件定义中缺少 displayName
     'react/display-name': ['warn', {ignoreTranspilerName: false}],
@@ -330,21 +343,10 @@ module.exports = {
     
     // Checks rules of Hooks
     // @link https://reactjs.org/docs/hooks-rules.html
-    'react-hooks/rules-of-hooks': 'error',
+    'react_hooks/rules-of-hooks': 'error',
     
     // Checks effect dependencies
     // @link https://reactjs.org/docs/hooks-rules.html
-    'react-hooks/exhaustive-deps': 'warn',
+    'react_hooks/exhaustive-deps': 'warn',
   },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', 'json'],
-      },
-    },
-    react: {
-      pragma: 'React',
-      version: 'detect',
-    }
-  }
 }

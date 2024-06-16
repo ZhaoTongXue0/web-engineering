@@ -4,16 +4,12 @@
  * @see https://github.com/import-js/eslint-plugin-import
  * @see https://github.com/import-js/eslint-plugin-import/blob/main/config/recommended.js
  */
+import importConfig from 'eslint-plugin-import'
 
-module.exports = {
-  plugins: [
-    'import',
-  ],
-  settings: {
-    'import/ignore': [
-      'node_modules',
-      '\\.(coffee|scss|css|less|hbs|svg|json)$',
-    ],
+export default {
+  files: ['node_modules','\\.(coffee|scss|css|less|hbs|svg|json)$'],
+  plugins: {
+    import: importConfig,
   },
   rules: {
     /**
@@ -36,7 +32,7 @@ module.exports = {
      * Helpful warnings
      */
     
-    // disallow invalid exports, e.g. multiple defaults
+    // 禁止无效导出，例如多个默认值
     'import/export': 'error',
     
     // import 一个文件时，禁止 default import 的名字跟文件内的命名 export 相同
@@ -45,13 +41,13 @@ module.exports = {
     // 访问 default export 的属性时，如果该文件有与属性同名的命名 export，则给出警告
     'import/no-named-as-default-member': 'warn',
     
-    // disallow use of jsdoc-marked-deprecated imports
+    // 禁止使用 JSDOC 标记的已弃用导入
     'import/no-deprecated': 'off',
     
-    // Forbid the use of extraneous packages
+    // 禁止使用无关的包装
     'import/no-extraneous-dependencies': 'off',
     
-    // Forbid mutable exports
+    // 禁止可变导出
     'import/no-mutable-exports': 'off',
     
     /**
@@ -103,7 +99,7 @@ module.exports = {
     'import/no-restricted-paths': 'off',
     
     // Forbid modules to have too many dependencies
-    'import/max-dependencies': ['off', { max: 10 }],
+    'import/max-dependencies': ['off', {max: 10}],
     
     // Forbid import of modules using absolute paths
     'import/no-absolute-path': 'off',
@@ -150,7 +146,7 @@ module.exports = {
     'import/no-self-import': 'error',
     
     // 不要产生循环引用
-    'import/no-cycle': ['error', { maxDepth: Infinity }],
+    'import/no-cycle': ['error', {maxDepth: Infinity}],
     
     // Ensures that there are no useless path segments
     'import/no-useless-path-segments': 'off',
@@ -164,4 +160,4 @@ module.exports = {
     // Use this rule to prevent imports to folders in relative parent paths.
     'import/no-relative-parent-imports': 'off',
   },
-};
+}
