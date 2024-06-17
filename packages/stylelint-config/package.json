@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-config",
+  "name": "zj-stylelint-config",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "qianyu@MacStudio <qianyu_work@icloud.com>",
@@ -25,9 +25,6 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "registry": "http://mirrors.cloud.tencent.com/npm/"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZhaoTongXue0/web-engineering.git"
