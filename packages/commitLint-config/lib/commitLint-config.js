@@ -29,6 +29,6 @@ module.exports = {
     // 类型从不为空
     'type-empty': [2, 'never'],
     // 类型数组
-    'type-enum': [2, 'always', ['feat', 'fix', 'docs', 'style', 'test', 'refactor', 'chore', 'revert']],
+    'type-enum': [2, 'always', ['feat', 'fix', 'docs', 'style', 'test', 'refactor', 'chore', 'revert','build']],
   }
 }
