@@ -1,6 +1,6 @@
 {
   "name": "zj-stylelint-config",
-  "version": "1.1.1",
+  "version": "0.0.0",
   "description": "> TODO: description",
   "author": "qianyu@MacStudio <qianyu_work@icloud.com>",
   "homepage": "https://github.com/ZhaoTongXue0/web-engineering#readme",
@@ -32,5 +32,5 @@
   "bugs": {
     "url": "https://github.com/ZhaoTongXue0/web-engineering/issues"
   },
-  "gitHead": "c6f3942d4f2ff8c65b4f000248adec664defdf7a"
+  "gitHead": "97e9d2c4e84527c27effd420aa102a46d83d479d"
 }

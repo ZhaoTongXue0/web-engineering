@@ -1,6 +1,6 @@
 {
   "name": "zj-eslint-config",
-  "version": "1.1.1",
+  "version": "0.0.0",
   "main": "index.js",
   "type": "module",
   "description": "eslint规范",
@@ -36,5 +36,5 @@
     "type": "git",
     "url": "git+https://github.com/ZhaoTongXue0/web-engineering.git"
   },
-  "gitHead": "c6f3942d4f2ff8c65b4f000248adec664defdf7a"
+  "gitHead": "97e9d2c4e84527c27effd420aa102a46d83d479d"
 }
