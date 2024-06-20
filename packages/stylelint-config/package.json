@@ -1,7 +1,7 @@
 {
   "name": "zj-stylelint-config",
   "version": "1.0.7",
-  "description": "> TODO: description",
+  "description": "stylelint规范",
   "author": "qianyu@MacStudio <qianyu_work@icloud.com>",
   "homepage": "https://github.com/ZhaoTongXue0/web-engineering#readme",
   "license": "ISC",

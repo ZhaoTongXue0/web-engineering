@@ -7,7 +7,7 @@
 依赖于 [markdownlint](https://www.npmjs.com/package/markdownlint)
 
 ```bash
-npm install markdownlint-config markdownlint --save-dev
+npm install zj-markdownlint-config markdownlint --save-dev
 ```
 
 ## 使用
@@ -16,7 +16,7 @@ npm install markdownlint-config markdownlint --save-dev
 
 ```json
 {
-  "extends": "markdownlint-config-config"
+  "extends": "zj-markdownlint-config"
 }
 ```
 
