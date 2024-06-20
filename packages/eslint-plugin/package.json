@@ -15,7 +15,9 @@
     "eslint-plugin"
   ],
   "files": [
-    "lib"
+    "configs/",
+    "rules/",
+    "README.md"
   ],
   "repository": {
     "type": "git",
@@ -35,5 +37,6 @@
   "dependencies": {
     "fs-extra": "^11.2.0",
     "require-all": "^3.0.0"
-  }
+  },
+  "gitHead": "828be949d416ad28134cfd7cb921cb7153c61b83"
 }
