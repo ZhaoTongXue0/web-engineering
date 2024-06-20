@@ -24,8 +24,7 @@
     "url": "git+https://github.com/ZhaoTongXue0/web-engineering.git"
   },
   "scripts": {
-    "test": "jest",
-    "prepublishOnly": "npm run test"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/ZhaoTongXue0/web-engineering/issues"
@@ -37,6 +36,5 @@
   "dependencies": {
     "fs-extra": "^11.2.0",
     "require-all": "^3.0.0"
-  },
-  "gitHead": "828be949d416ad28134cfd7cb921cb7153c61b83"
+  }
 }
