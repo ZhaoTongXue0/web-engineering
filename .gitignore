@@ -1,3 +1,5 @@
 node_modules
-/docs/.vuepress/.cache
-/docs/.vuepress/.temp
+/dist
+.dumi/tmp
+.dumi/tmp-production
+.DS_Store

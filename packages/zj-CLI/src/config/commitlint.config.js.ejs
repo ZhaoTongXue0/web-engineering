@@ -1,0 +1,3 @@
+module.exports = {
+  extends: ['zj-commitlint-config'],
+};
